@@ -1,0 +1,24 @@
+<div *ngIf="login === false" style="position: relative; top: 50%; left: 50px; border-radius: 5%; background-color: lightslategray; width: 400px; height: 300px;" id="div">
+    <div style="position: relative; left: 10px;">
+        <h3> Login:</h3>
+        <form>
+            <p>Username:</p>
+            <input type="text" name="username" [(ngModel)]="username">
+            <p>Password:</p>
+            <input type="password" name="password" [(ngModel)]="password">
+        </form>
+        <button (click)="clickedButton()">Let me in</button>
+    </div>
+</div>
+
+<div *ngIf="login === true" style="position: relative; top: 20px; background-color: aliceblue; height: 400px; width: 600px;">
+    <div>
+        <h1>Admin console</h1>
+        <div style="position: relative; left: 30px; background-color: black; color: greenyellow; height: 300px; width: 520px;">
+            <pre>{{commands}}</pre>
+        </div>
+        <input type="text" name="commands" [(ngModel)]="command" style="position: relative; left: 30px;">
+        <button (click)="postCommand()" style="position: relative; left: 30px;">post</button>
+
+    </div>
+</div>

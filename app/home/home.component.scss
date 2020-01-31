@@ -1,0 +1,31 @@
+button {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.hud {
+    position: relative;
+    top: 10px;
+    left: 15px;
+    height: 40px;
+    width: 120px;
+    border-radius: 10%;
+    background-color: #549e60;
+}
+
+.buttons {
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.outline {
+    position: relative;
+    left: 40%;
+    top: 200px;
+    background-color: #ea7df0;
+    border-radius: 10%;
+    height: 270px;
+    width: 150px;
+}

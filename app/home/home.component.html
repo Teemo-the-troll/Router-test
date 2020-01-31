@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div class="outline">
+        <div class="hud">
+            {{prikladFake}} {{vysledekFake}}
+        </div>
+        <div class="buttons">
+            <div>
+                <button (click)="addNumberToMezipamet('1')">1</button>
+                <button (click)="addNumberToMezipamet('2')">2</button>
+                <button (click)="addNumberToMezipamet('3')">3</button>
+            </div>
+            <div>
+                <button (click)="addNumberToMezipamet('4')">4</button>
+                <button (click)="addNumberToMezipamet('5')">5</button>
+                <button (click)="addNumberToMezipamet('6')">6</button>
+            </div>
+            <div>
+                <button (click)="addNumberToMezipamet('7')">7</button>
+                <button (click)="addNumberToMezipamet('8')">8</button>
+                <button (click)="addNumberToMezipamet('9')">9</button>
+            </div>
+            <div>
+                <button (click)="addNumberToMezipamet('0')">0</button>
+                <button (click)="addOperator('*')">*</button>
+                <button (click)="addOperator('+')">+</button>
+            </div>
+            <div>
+                <button (click)="addOperator('-')">-</button>
+                <button (click)="addOperator('/')">/</button>
+                <button (click)="getInt()">=</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
